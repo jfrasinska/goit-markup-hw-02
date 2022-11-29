@@ -1,0 +1,29 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+nav a {
+  color: #212121;
+}
+nav a.active {
+  color: #2196f3;
+}
+.filter {
+  list-style: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.filter button:focus,
+.filter button:hover {
+  background: #2196f3;
+  cursor: pointer;
+}
