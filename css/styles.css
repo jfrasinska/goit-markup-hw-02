@@ -10,13 +10,12 @@ body {
   color: var(--primary-text-color);
 }
 
-h1 {
+.hero-header {
   color: #fff;
   font-weight: 900;
   font-size: 44px;
   line-height: 136%;
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -49,8 +48,55 @@ h1 {
   color: var(--primary-text-color);
 }
 
-.site-nav li {
+.site-nav li,
+.article-box {
   list-style: none;
+}
+
+.hero-container,
+.footer-container {
+  background-color: var(--secondary-background-color);
+}
+.button-box {
+  background-color: var(--main-design-blue);
+  color: #fff;
+}
+.article-name {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.article-overview {
+  color: var(--secondary-text-color);
+  line-height: 171%;
+}
+.secondary-header {
+  color: var(--primary-text-color);
+  text-align: center;
+}
+.about-container {
+  background-color: #f5f4fa;
+}
+.photo-box {
+  background-color: #fff;
+}
+.name {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 119%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.position {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 119%;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .filter {
   list-style: none;
@@ -78,6 +124,7 @@ h1 {
   text-align: left;
 }
 .project-name {
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 200%;
@@ -86,13 +133,9 @@ h1 {
 .project-type {
   font-size: 16px;
   line-height: 188%;
-  color: var(--basic-text-color);
+  color: var(--secondary-text-color);
 }
 
-.hero-element,
-.footer-container {
-  background-color: var(--secondary-background-color);
-}
 .address-info {
   color: #fff;
   line-height: 171%;
@@ -100,6 +143,7 @@ h1 {
 }
 .contact-links a {
   font-style: normal;
+  text-decoration: none;
   color: var(--secondary-text-color);
 }
 .contact-links a:hover,
