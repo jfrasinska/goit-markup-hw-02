@@ -1,36 +1,56 @@
 :root {
   --main-design-blue: #2196f3;
+  --primary-text-color: #212121;
   --secondary-text-color: #757575;
+  --secondary-background-color: #2f303a;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
-.logo {
+h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.first-logo,
+.second-logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 120%;
 }
 
-.logo span:nth-child(1) {
+.first-logo span:nth-child(1),
+.second-logo span:nth-child(1) {
   color: var(--main-design-blue);
 }
 
-.logo span:nth-child(2) {
+.first-logo span:nth-child(2) {
   color: #000;
+}
+
+.second-logo span:nth-child(2) {
+  color: #fff;
 }
 
 .site-nav {
   border-bottom: 1px solid #ececec;
 }
 
-a {
+.site-nav a {
   text-decoration: none;
+  color: var(--primary-text-color);
 }
-a.active {
-  color: var(--main-design-blue);
+
+.site-nav li {
+  list-style: none;
 }
 .filter {
   list-style: none;
@@ -39,7 +59,6 @@ a.active {
   font-size: 16px;
   text-align: center;
   background: #f5f4fa;
-  border-radius: 4px;
 }
 .filter button:focus,
 .filter button:hover {
@@ -56,7 +75,7 @@ a.active {
   width: 370px;
   height: 404px;
   border: 1px solid #eee;
-  text-align: center;
+  text-align: left;
 }
 .project-name {
   font-weight: 700;
@@ -68,4 +87,24 @@ a.active {
   font-size: 16px;
   line-height: 188%;
   color: var(--basic-text-color);
+}
+
+.hero-element,
+.footer-container {
+  background-color: var(--secondary-background-color);
+}
+.address-info {
+  color: #fff;
+  line-height: 171%;
+  font-style: normal;
+}
+.contact-links a {
+  font-style: normal;
+  color: var(--secondary-text-color);
+}
+.contact-links a:hover,
+.contact-links a:focus,
+.main-nav a:hover,
+.main-nav a:focus {
+  color: var(--main-design-blue);
 }
