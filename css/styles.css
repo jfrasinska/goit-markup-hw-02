@@ -1,12 +1,36 @@
+:root {
+  --main-design-blue: #2196f3;
+  --secondary-text-color: #757575;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+}
+
+.logo span:nth-child(1) {
+  color: var(--main-design-blue);
+}
+
+.logo span:nth-child(2) {
+  color: #000;
+}
+
+.site-nav {
+  border-bottom: 1px solid #ececec;
+}
+
 a {
   text-decoration: none;
 }
-nav a.active {
-  color: #2196f3;
+a.active {
+  color: var(--main-design-blue);
 }
 .filter {
   list-style: none;
@@ -14,27 +38,34 @@ nav a.active {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  letter-spacing: 0.03em;
   background: #f5f4fa;
   border-radius: 4px;
 }
 .filter button:focus,
 .filter button:hover {
-  background: #2196f3;
+  background: var(--main-design-blue);
   cursor: pointer;
   color: #ffffff;
 }
 
+.portfolio {
+  list-style: none;
+}
+
+.portfolio-element {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eee;
+  text-align: center;
+}
 .project-name {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 200%;
 }
 
 .project-type {
-  font-family: "Roboto";
   font-size: 16px;
-  line-height: 30px;
-  color: #757575;
+  line-height: 188%;
+  color: var(--basic-text-color);
 }
