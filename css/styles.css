@@ -25,9 +25,10 @@ body {
 
 .first-logo,
 .second-logo {
+  font-family: "Relawey";
   font-weight: 700;
   font-size: 26px;
-  line-height: 120%;
+  line-height: 100%;
   letter-spacing: 0.03em;
 }
 
@@ -48,10 +49,17 @@ body {
 }
 .site-nav-links {
   border-bottom: 1px solid #ececec;
+}
+.logo {
   text-decoration: none;
 }
-.main-nav a {
+.nav-link {
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
 .hero-container,
@@ -150,15 +158,18 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
 }
-.contact-links a {
+.email,
+.phone {
   font-style: normal;
   text-decoration: none;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
 }
-.contact-links a:hover,
-.contact-links a:focus,
-.main-nav a:hover,
-.main-nav a:focus {
+.email:hover,
+.phone:hover,
+.email:focus,
+.email:hover,
+.nav-link:hover,
+.nav-link:focus {
   color: var(--main-design-blue);
 }
