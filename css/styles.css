@@ -25,7 +25,7 @@ body {
 
 .first-logo,
 .second-logo {
-  font-family: "Relawey";
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 100%;
@@ -114,20 +114,18 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.filter {
+.filter-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 139%;
   letter-spacing: 0.03em;
   text-align: center;
-}
-.filter button {
   background-color: var(--contrast-elements-color);
   border: none;
   cursor: pointer;
 }
-.filter button:focus,
-.filter button:hover {
+.filter-button:focus,
+.filter-button:hover {
   background: var(--main-design-blue);
   color: var(--main-design-white);
 }
